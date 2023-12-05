@@ -27,7 +27,7 @@ const fs = require("fs");
   const csvContent = products
     .map((product) => `${product.name},${product.price}`)
     .join("\n");
-  fs.writeFileSync("products.csv", "Name,Price\n" + csvContent, "utf-8");
+  fs.writeFileSync("dns_products.csv", "Name,Price\n" + csvContent, "utf-8");
 
-  console.log("products.csv");
+  console.log("dns.csv");
 })();
